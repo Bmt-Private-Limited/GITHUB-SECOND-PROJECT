@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY PORTFOLIO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/339bdb5343.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+<style type="text/css">
+	body{background-image: url(https://cdn.hipwallpaper.com/i/50/72/SsRWfy.jpg);
+						   /* background-attachment: fixed;*/
+						background-repeat: no-repeat;
+						background-size: cover;
+						overflow: auto;}
+
+.section{width: 1503px}
+
+h1 {font-family: 'Lobster Two', cursive;}
+
+.left{background: #d5cbcb96;
+	   width: 472px;
+	   margin-left: 50px;
+	   margin-bottom: 15px;
+	   height: 1839px;
+	   padding: 28px;
+	   box-sizing: border-box;
+	   float: left;
+	   box-shadow: 0px 0px 15px 4px black;
+	   border-radius: 10px;}
+	 
+.myphoto img{width: 413px;
+	height: 350px;
+	box-shadow: 0 0 11px 1px black;
+	border-radius: 15px;
+	
+	animation: profileimage all 2s;
+   }
+.myphoto{position: relative;}
+.myphotobackground{width: 413px;
+	height: 350px;
+	transform: scaleY(0);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+ background: #00000094;
+border-radius: 15px;
+transition: all 1s;
+color: white;
+text-align: center;}
+
+.bmt{position: absolute;
+    top: 42%;
+    left: 31%;
+    font-size: 62px;
+    font-weight: bold;}
+
+
+.myphoto:hover > .myphotobackground{transform: scaleY(1);
+                                     }
+
+
+.socialaddress{border-bottom: 2px solid #ffffff17;
+				transition: all 1s;
+				height: 180px;}
+.socialaddress p{font-family: 'Bebas Neue', cursive;
+				transition: all 1s;}
+.socialaddress p i{margin-right: 20px;}
+.socialaddress p:hover{transform:scaleX(0.9); 
+						font-size: 20px;
+						cursor: pointer;}
+
+.skill{border-bottom: 2px solid #ffffff17;
+		height: 861px;
+		overflow: auto;}
+.bar{height: 20px;width: 390px; background: #3f2e2e; border-radius: 50px;color: white}
+		.prograssbarhtml{animation: html 2s ; min-height: 20px; width: 70%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbarcss{animation: css 2s ; min-height: 20px; width: 60%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbarjava{animation: java 2s ; min-height: 20px; width: 10%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbarbootstrap{animation: bootstrap 2s ; min-height: 20px; width: 5%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbarrecat{animation: recat 2s ; min-height: 20px; width: 0%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbargithub{animation: github 2s ; min-height: 20px; width: 0%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbarresponsive{animation: RD 2s ; min-height: 20px; width: 10%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbarwordpress{animation: wordpress 2s ; min-height: 20px; width: 20%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbarphp{animation: php 2s ; min-height: 20px; width: 0%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbardatabase{animation: database 2s ; min-height: 20px; width: 0%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbarenglish{animation: english 2s ; min-height: 20px; width: 70%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbarhindi{animation: hindi 2s ; min-height: 20px; width: 80%; background: #00c806; border-radius: 50px; text-align: center;}
+		.prograssbarbengali{animation: bengalinew 2s ; min-height: 20px; width: 95%; background: #00c806; border-radius: 50px; text-align: center;}
+
+.skill p{color: white;font-family: 'Abril Fatface', cursive;}
+.skill h1{animation: skill 2s;}
+
+.language p{color: white;
+	      font-family: 'Abril Fatface', cursive;}
+
+.rightup{background: #d5cbcb96;
+	   width: 892px;
+	   height: auto;
+	   padding: 28px;
+	   box-sizing: border-box;
+	   float: right;
+	   margin-right: 40px;
+	   box-shadow: 0 0 20px 4px black;
+	   border-radius: 10px;}
+
+.date{font-family: 'Alfa Slab One', cursive;}
+
+.rightup .header h1 i{margin-right: 20px}
+.header h1{animation: header 3s ; }
+
+.subject h2{text-decoration-line: underline;
+	text-decoration-style: wavy;
+	font-family: 'Anton', sans-serif;
+	font-family: 'Lobster Two', cursive;}
+.subject{background: #d5cbcb30;
+	border: 2px dotted #ffffff6b;
+	margin-bottom: 6px;
+	padding: 0px 15px;
+	border-radius: 50px;
+	animation: subject 2s ; 
+	transition: all 1s;}
+.subject:hover{background:transparent;
+	 			cursor: pointer; 
+				transform:scale(.9); 
+				font-size: 25px;
+			   border:3px dashed black;
+			   font-weight: bold;}
+.subject i{margin-right: 20px}
+.subject p{font-family: 'Vidaloka', serif;
+			font-size: 20px;
+			line-height: 28px;}
+
+.rightdown{
+	   background: #d5cbcb96;
+	   width: 892px;
+	   height: auto;
+	   padding: 28px;
+	   box-sizing: border-box;
+	   float: right;
+	   margin-top: 10px;
+	   margin-bottom: 10px;
+	   margin-right: 38px;
+	   box-shadow: 0 0 20px 4px black;
+	   border-radius: 10px;
+	   }
+.rightdown .header h1 i{margin-right: 20px}
+
+.footer{background: #5d4b4b8c;
+	   color: white;
+	   width: 100%;
+	   height: auto;
+	   padding: 28px;
+	   box-sizing: border-box;
+	   clear: both;
+	   text-align: center;
+	   margin-top: 10px;
+	   box-shadow: 0 0 20px 4px black;
+	   border-radius: 80px;}
+
+.footer i{margin-right: 20px; 
+	font-size: 30px; 
+	color: #a900ff;
+	transition: all 1s;}
+.footer i:hover{transform:rotate(360deg);}
+
+/*@media screen and(max-width: 1000px)*/
+@keyframes html{
+	0%{width: 0%}
+	100%{width: 70%}
+}
+@keyframes css{
+	0%{width: 0%}
+	100%{width: 60%}
+}
+@keyframes java{
+	0%{width: 0%}
+	100%{width: 10%}
+}
+@keyframes bootstrap{
+	0%{width: 0%}
+	100%{width: 5%}
+}
+@keyframes recat{
+	0%{width: 0%}
+	100%{width: 0%}
+}
+@keyframes github{
+	0%{width: 0%}
+	100%{width: 0%}
+}
+@keyframes RD{
+	0%{width: 0%}
+	100%{width: 10%}
+}
+
+@keyframes wordpress{
+	0%{width: 0%}
+	100%{width: 20%}
+}
+@keyframes php{
+	0%{width: 0%}
+	100%{width: 0%}
+}
+@keyframes database{
+	0%{width: 0%}
+	100%{width: 0%}
+}
+@keyframes english{
+	0%{width: 0%}
+	100%{width: 70%}
+}
+@keyframes hindi{
+	0%{width: 0%}
+	100%{width: 80%}
+}
+@keyframes bengalinew{
+	0%{width: 0%}
+	100%{width: 95%}
+}
+
+@keyframes subject {
+  from {transform:scale(0);}
+  to {transform:scale(1);}
+}
+  @keyframes header {
+  from {transform:scale(0);}
+  to {transform:scale(1);}
+}
+                                          
+
+
+</style>
+</head>
+<body>
+<section class="section"><div class="left">
+	<div class="myphoto"><img src="https://instagram.frdp1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/72974650_430014797684449_4977969131602051072_n.jpg?_nc_ht=instagram.frdp1-1.fna.fbcdn.net&_nc_ohc=zeDPjWKLXZgAX9KIR-c&oh=d4af5ec483c1220959a2967543615f92&oe=5EB5A086">
+		<div class="myphotobackground">
+			<div class="bmt">B.M.T</div></div></div>
+	 
+	 <div class="socialaddress">
+		<p><i class="fas fa-user-md"></i>WEB DEVLOPER</p>
+		<p><i class="fas fa-home"></i>WEST BENGAL,INDIA</p>
+		<p><i class="fas fa-envelope"></i>BISWARUP9749@GMAIL.COM</p>
+		<p><i class="fas fa-mobile-alt"></i>91+ 9749082597</p>
+	</div>
+	<div class="skill">
+		<h1>*SKILLS*</h1>
+		<p>HTML:-
+<div class="bar">
+	<div class="prograssbarhtml"><span><b>70%</b></span></div>
+</div></p>
+
+<p>CSS:-
+<div class="bar">
+	<div class="prograssbarcss"><span><b>60%</b></span></div>
+</div></p>
+
+<p>JAVA-SCRIPT:-
+<div class="bar">
+	<div class="prograssbarjava"><span><b>10%</b></span></div>
+</div></p>
+
+<p>BOOT-STRAP:-
+<div class="bar">
+	<div class="prograssbarbootstrap"><span><b>5%</b></span></div>
+</div></p>
+
+<p>REACT:-
+<div class="bar">
+	<div class="prograssbarrecat"><span><b>0%</b></span></div>
+</div></p>
+
+<p>GIT-HUB:-
+<div class="bar">
+	<div class="prograssbargithub"><span><b>0%</b></span></div>
+</div></p>
+
+<p>RESPONSIVE-DESIGN:-
+<div class="bar">
+	<div class="prograssbarresponsive"><span><b>10%</b></span></div>
+</div></p>
+
+<p>WORDPRESS:-
+<div class="bar">
+	<div class="prograssbarwordpress"><span><b>20%</b></span></div>
+</div></p>
+
+<p>PHP:-
+<div class="bar">
+	<div class="prograssbarphp"><span><b>0%</b></span></div>
+</div></p>
+
+<p>DATABASE:-
+<div class="bar">
+	<div class="prograssbardatabase"><span><b>0%</b></span></div>
+</div></p>
+
+
+	</div>
+	<div class="language">
+			<h1>*LANGUAGE*</h1>
+		<p>ENGLISH:-
+<div class="bar">
+	<div class="prograssbarenglish"><span><b>70%</b></span></div>
+</div></p>
+
+<p>HINDI:-
+<div class="bar">
+	<div class="prograssbarhindi"><span><b>80%</b></span></div>
+</div></p>
+
+<p>BENGALI:-
+<div class="bar">
+	<div class="prograssbarbengali"><span><b>95%</b></span></div>
+</div></p>
+	</div>
+</div>
+<div class="rightup">
+	<div class="header"><h1><i class="fas fa-suitcase"></i>*WORK EXPERIENCE*</h1>
+	</div>
+	<div class="subject"><h2>*FRONT-END DEVLOPER/w3schools.com*</h2>
+	<i class="fas fa-calendar-alt"></i> <span class="date">15-Jan 2020-<mark>TILL RUNNING</mark></span>
+		<p>HALLOW MY NAME IS BISWARUP MANDAL AND I AM FROM INDIA. IN THIS TIME I AM LEARNING WEB DEVLOPMENT FORM MANY SOURSE ON INTERNET AND I JUST WHNT TO TELL YOU ONE THING THAT IN JUST 10 DAYS AGO I STATED LEARNING WEB DEVLOPMENT AND FORM THAT KNOWLEDGE I MAKE THIS PORTFULLO WEB-SITE.</p>
+	</div>
+	<div class="subject">
+		<h2>*BACK-END DEVLOPER/w3schools.com*</h2>
+		<i class="fas fa-calendar-alt"></i><span class="date"><mark>NEXT TERGET</mark></span>
+		<p>HALLOW MY NAME IS BISWARUP MANDAL AND I AM FROM INDIA. AFTER COMPLEATING FRONT-END DEVLOPMENT; I WILL LEARN BACK-END DEVLOPMENT FORM MANY SOURSE ON INTERNET AND I JUST WHAT TO TELL YOU ONE THING THAT IN JUST 10 DAYS AGO I STATED LEARNING WEB DEVLOPMENT AND FORM THAT KNOWLEDGE I MAKE THIS PORTFULLO WEB-SITE.</p>
+	</div>
+	<div class="subject"><h2>*GRAPHS DESINER/w3schools.com*</h2>
+		<i class="fas fa-calendar-alt"></i><span class="date"><mark>NEXT TERGET</mark></span>
+		<p>HALLOW MY NAME IS BISWARUP MANDAL AND I AM FROM INDIA. AFTER COMPLEATING BACK-END DEVLOPEMENT, I WILL LEARN GRAPHS DESINER FORM MANY SOURSE ON INTERNET AMD I JUST WHAT TO TELL YOU ONE THING THAT IN JUST 10 DAYS AGO I STATED LEARNING WEB DEVLOPMENT AND FORM THAT KNOWLEDGE I MAKE THIS PORTFULLO WEB-SITE.</p>
+	</div>
+</div>
+<div class="rightdown">
+	<div class="header"><h1><i class="fas fa-book-open"></i>*EDUCATION*</h1></div>
+	<div class="subject"><h2>*SECONDARY-SCHOOL LIFE*</h2>
+		<i class="fas fa-calendar-alt"></i> <span class="date">Jan 2011 - Dec 2016</span>
+		<p>HALLOW MY NAME IS BISWARUP MANDAL AND I AM FROM INDIA. I COMPLEATED MY SECONDARY IN PURULIA NETAJI VIDYAPITH AT PURULIAI. IT IS A GOVERMENT-SPONSOR HIGH-SCHOOL. BUT AFTER 10th I CHANGED MY SCHOOL</p>
+	</div>
+	<div class="subject"><h2>*HIGHER-SECONDARY-SCHOOL LIFE*</h2>
+		<i class="fas fa-calendar-alt"></i><span class="date"> Apr 2017 - Apr2019</span>
+		<p>HALLOW MY NAME IS BISWARUP MANDAL AND I AM FROM INDIA. I COMPLEATED MY HIGHER-SECONDARY IN PURULIA ZILLA SCHOOL AT PURULIAI. IT IS A FULL-GOVERMENT HIGH-SCHOOL.THAT THOSE DAYS ARE ONE OF THE BEST DAYS OF MY LIFE.</p>
+	</div>
+	<div class="subject"><h2>*COLLAGE-LIFE*</h2>
+		<i class="fas fa-calendar-alt"></i> <span class="date">June 2019 - <mark>Current</mark></span>
+		<p>HALLOW MY NAME IS BISWARUP MANDAL AND I AM FROM INDIA. AFTER COMPLEATING HIGHER-SECONDARY I JOIN AT CANNING GOVERMENT POLYTECHNIC.AND VERY SADLY I JUST WANT TO TELL TAHT LAST 1 YEAR I HAVE BEEN SITTING AT HOME FOR SOME PROBLEMS</p>
+	</div>
+</div>
+<div class="footer"><h1>COPY-RIGHT © BMT</h1><br/>
+<a href="https://www.facebook.com/biswarup.mandal.501?fref=nf&__tn__=%2Cdm-R-R&eid=ARBmKqyroqvITjf6TYeI39h3lazitc33twxkLrIDZIidh1WbABlJNFz-HbFRtXKM_uh4I91ylFNubLeR" target="blank1"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/mandal_biswarup/" target="blank2"><i class="fab fa-instagram"></i></a>
+<a href="https://twitter.com/Biswaru14510936" target="blank3"><i class="fab fa-twitter"></i></a>
+<a href="https://www.youtube.com/channel/UC3xOX2gODfcjQnYefprPW5Q" target="blank"><i class="fab fa-youtube"></i></a>
+<a href="https://www.linkedin.com/in/biswarup-mandal-4525111a0/" target="blank4"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://chat.whatsapp.com/FooqP3WTEhVGPEEPY7hABy" target="blank5"><i class="fab fa-whatsapp"></i></a>
+</div>
+</section>
+</body>
+</html>
